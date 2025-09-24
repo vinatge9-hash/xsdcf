@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niyantri Studio | About</title>
+  <meta name="description" content="Learn about Niyantri Studio, our approach to photography, and the team behind creating timeless images.">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-sans">
+  <header class="bg-white shadow-md">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold font-[primary-font]">Niyantri Studio</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-black">Home</a>
+        <a href="gallery.html" class="text-gray-700 hover:text-black">Gallery</a>
+        <a href="about.html" class="text-gray-700 hover:text-black">About</a>
+        <a href="contact.html" class="text-gray-700 hover:text-black">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">Menu</button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="index.html" class="block py-2 text-sm text-gray-700">Home</a>
+      <a href="gallery.html" class="block py-2 text-sm text-gray-700">Gallery</a>
+      <a href="about.html" class="block py-2 text-sm text-gray-700">About</a>
+      <a href="contact.html" class="block py-2 text-sm text-gray-700">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1758613656365-5195c3b96ba3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBwaG90b2dyYXBoZXIlMjBzdHVkaW8lMjB3aXRoJTIwZXF1aXBtZW50fGVufDB8MHx8fDE3NTg3MjI1NjB8MA&ixlib=rb-4.1.0&q=80&w=1080');">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 max-w-3xl mx-auto px-6 py-40 text-center text-white">
+        <h1 class="font-[primary-font] text-4xl md:text-5xl font-bold mb-4">Our Story</h1>
+        <p class="font-[secondary-font] text-lg mb-6">Niyantri Studio was founded with a passion for storytelling through light, texture, and emotion. We blend documentary-style photography with refined portraiture to create images that feel intimate and real.</p>
+      </div>
+    </section>
+
+    <section class="py-16 px-6">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="font-[primary-font] text-2xl md:text-3xl font-bold mb-4">Meet the Photographer</h2>
+          <p class="font-[secondary-font] text-lg leading-relaxed text-gray-800">The studio is led by a photographer who thrives on authentic connections and natural light. With a background in portrait and lifestyle, our approach centers on making clients feel comfortable and telling their story with patience and discretion.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="bg-white rounded-lg shadow p-4 flex items-center space-x-4">
+            <img src="https://pixabay.com/get/ga11cf467cc83b12ac34197be7615c3646b931c68a76a29712898e8a2d3338aeb844f0bbe36d7cee62a0fce87dff434ec3d66c1d651e46ff0b7523fa08dafadee_640.jpg" alt="Headshot of lead photographer" class="w-16 h-16 rounded-full object-cover">
+            <div>
+              <p class="font-semibold">Alex Rao</p>
+              <p class="text-sm text-gray-600">Lead Photographer</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow p-4 flex items-center space-x-4">
+            <img src="https://pixabay.com/get/geec341c124fd4246a94cf87f366aa6418f203fd72b9355dd74394088e9471c49ab1132f99c7c3e47152939363940157303a551dd3c9a30997ac3b7098c6fb61f_640.jpg" alt="Portrait of assistant photographer" class="w-16 h-16 rounded-full object-cover">
+            <div>
+              <p class="font-semibold">Mira Chen</p>
+              <p class="text-sm text-gray-600">Studio Assistant</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 px-6 bg-gray-50">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="font-[primary-font] text-xl font-semibold mb-4">Philosophy</h3>
+        <p class="font-[secondary-font] text-gray-800 leading-relaxed">We believe great photography is a collaboration. We listen, observe, and adapt to light, location, and mood. Our goal is to produce images that feel effortless and alive.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black text-white">
+    <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Niyantri Studio</h4>
+        <p class="text-gray-300">Timeless photography with a storytelling approach.</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Contact</h4>
+        <p class="text-gray-300">Email: info@niyantri.studio</p>
+        <p class="text-gray-300">Phone: +1 (555) 010-1234</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Links</h4>
+        <a href="gallery.html" class="block text-gray-300 hover:text-white">Gallery</a>
+        <a href="index.html" class="block text-gray-300 hover:text-white">Home</a>
+        <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
+      </div>
+    </div>
+    <p class="text-center py-4 text-gray-400 text-sm">&copy; 2025 Niyantri Studio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn) {
+      btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    }
+  </script>
+</body>
+</html>
