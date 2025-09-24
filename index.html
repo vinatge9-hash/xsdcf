@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niyantri Studio | Photography</title>
+  <meta name="description" content="Niyantri Studio is a photography studio capturing timeless imagery across portraits, weddings, and lifestyle shoots.">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-sans">
+  <header class="bg-white shadow-md">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold font-[primary-font]">Niyantri Studio</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-black">Home</a>
+        <a href="gallery.html" class="text-gray-700 hover:text-black">Gallery</a>
+        <a href="about.html" class="text-gray-700 hover:text-black">About</a>
+        <a href="contact.html" class="text-gray-700 hover:text-black">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">Menu</button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="index.html" class="block py-2 text-sm text-gray-700">Home</a>
+      <a href="gallery.html" class="block py-2 text-sm text-gray-700">Gallery</a>
+      <a href="about.html" class="block py-2 text-sm text-gray-700">About</a>
+      <a href="contact.html" class="block py-2 text-sm text-gray-700">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('https://pixabay.com/get/g62a58558b6f860493b8c4120191a061021c0dd801255b193eae1b9be0494c667297f05a4e9a013eb1ec9f4d521691cd751ad8f776609c8f5567a31cc7fdb49d0_640.jpg');">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 max-w-4xl mx-auto px-6 py-40 text-center text-white">
+        <h1 class="font-[primary-font] text-4xl md:text-6xl font-bold mb-4">Niyantri Studio</h1>
+        <p class="font-[secondary-font] text-lg md:text-2xl mb-8">Capturing moments, crafting stories with timeless photography.</p>
+        <a href="gallery.html" class="inline-block bg-black text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-black transition-colors duration-300">View Gallery</a>
+      </div>
+    </section>
+
+    <section class="py-16 px-6">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="font-[primary-font] text-2xl md:text-3xl font-bold mb-4">Featured Works</h2>
+        <p class="mb-8 text-gray-700">A small selection from recent shoots across portrait, lifestyle, and events.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a href="gallery.html#work1">
+            <img src="https://images.pexels.com/photos/8673107/pexels-photo-8673107.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Portrait photograph of a person by a window" class="w-full h-48 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          </a>
+          <a href="gallery.html#work2">
+            <img src="https://images.unsplash.com/photo-1700139004825-69f01927d62e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw1fHxvdXRkb29yJTIwd2VkZGluZyUyMGNvdXBsZSUyMHVuZGVyJTIwc29mdCUyMGxpZ2h0fGVufDB8MHx8fDE3NTg3MjI1NTh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Wedding portrait in an outdoor setting" class="w-full h-48 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          </a>
+          <a href="gallery.html#work3">
+            <img src="https://pixabay.com/get/g30a6a2d98e14f6bf6dd06edcc1fca668ab5016c48d8e0284153377520b544e0b167138aba79a1331767b0d8522750cbe5d01592614ef2950efc6b18645fa9a25_640.jpg" alt="Studio fashion shoot with dramatic lighting" class="w-full h-48 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black text-white">
+    <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-lg font-semibold mb-3">Niyantri Studio</h3>
+        <p class="text-gray-300">Capturing moments with a timeless vision. Available for travel worldwide.</p>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold mb-3">Contact</h4>
+        <p class="text-gray-300">Email: info@niyantri.studio</p>
+        <p class="text-gray-300">Phone: +1 (555) 010-1234</p>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold mb-3">Links</h4>
+        <ul class="space-y-2">
+          <li><a href="gallery.html" class="text-gray-300 hover:text-white">Gallery</a></li>
+          <li><a href="about.html" class="text-gray-300 hover:text-white">About</a></li>
+          <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold mb-3">Social</h4>
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-300 hover:text-white" aria-label="Instagram">Instagram</a>
+          <a href="#" class="text-gray-300 hover:text-white" aria-label="Facebook">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700"></div>
+    <p class="text-center py-4 text-gray-400 text-sm">&copy; 2025 Niyantri Studio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Simple mobile menu toggle
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn) {
+      btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    }
+  </script>
+</body>
+</html>
