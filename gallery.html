@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niyantri Studio | Gallery</title>
+  <meta name="description" content="Gallery showcasing the diverse photography of Niyantri Studio, including portraits, weddings, and lifestyle shoots.">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-sans">
+  <header class="bg-white shadow-md">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold font-[primary-font]">Niyantri Studio</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-black">Home</a>
+        <a href="gallery.html" class="text-gray-700 hover:text-black">Gallery</a>
+        <a href="about.html" class="text-gray-700 hover:text-black">About</a>
+        <a href="contact.html" class="text-gray-700 hover:text-black">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">Menu</button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="index.html" class="block py-2 text-sm text-gray-700">Home</a>
+      <a href="gallery.html" class="block py-2 text-sm text-gray-700">Gallery</a>
+      <a href="about.html" class="block py-2 text-sm text-gray-700">About</a>
+      <a href="contact.html" class="block py-2 text-sm text-gray-700">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.pexels.com/photos/7319297/pexels-photo-7319297.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 max-w-4xl mx-auto px-6 py-40 text-center text-white">
+        <h1 class="font-[primary-font] text-4xl md:text-5xl font-bold mb-4">Gallery</h1>
+        <p class="font-[secondary-font] text-lg">A curated selection of recent work across portraits, events, and lifestyle shoots.</p>
+      </div>
+    </section>
+
+    <section class="py-14 px-6">
+      <div class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        ${Array.from({length:12}).map((_,i)=>`<figure class="rounded-lg overflow-hidden shadow-lg bg-white">
+          <img src="https://images.unsplash.com/photo-1579222789669-2775685c3d88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw3fHxzYW1wbGUlMjBwaG90b2dyYXBoaWMlMjB3b3JrJTIwJTI0JTdCaSUyQjF8ZW58MHwwfHx8MTc1ODcyMjU2M3ww&ixlib=rb-4.1.0&q=80&w=1080}" alt="Gallery image ${i+1}" class="w-full h-48 object-cover"/>
+        </figure>`).join('')}
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black text-white">
+    <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Niyantri Studio</h4>
+        <p class="text-gray-300">Timeless photography that tells your story.</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Quick Links</h4>
+        <a href="index.html" class="block text-gray-300 hover:text-white">Home</a>
+        <a href="gallery.html" class="block text-gray-300 hover:text-white">Gallery</a>
+        <a href="about.html" class="block text-gray-300 hover:text-white">About</a>
+        <a href="contact.html" class="block text-gray-300 hover:text-white">Contact</a>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Contact</h4>
+        <p class="text-gray-300">Email: info@niyantri.studio</p>
+        <p class="text-gray-300">Phone: +1 (555) 010-1234</p>
+      </div>
+    </div>
+    <p class="text-center py-4 text-gray-400 text-sm">&copy; 2025 Niyantri Studio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn) { btn.addEventListener('click', () => { menu.classList.toggle('hidden'); }); }
+  </script>
+</body>
+</html>
